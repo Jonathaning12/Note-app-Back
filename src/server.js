@@ -5,7 +5,7 @@ import{connectDB} from "./config/DB.js"
 import cors from "cors"
 dotenv.config()
 const app= express()
-app.use(cors({origin: ["http://localhost:5173", "https://bright-babka-132835.netlify.app/"]})) // Habilitar CORS para todas las rutas
+app.use(cors({origin: ["http://localhost:5173", "https://bright-babka-132835.netlify.app"]})) // Habilitar CORS para todas las rutas
 app.use(express.json()) // Middleware para parsear JSON en las solicitudes
 app.use("/api/notas", notesRouter)
 //probandi el status git
